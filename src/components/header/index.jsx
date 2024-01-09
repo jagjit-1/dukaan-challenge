@@ -8,8 +8,8 @@ export const Header = () => {
     const { collapsed } = useSidebar(state => state);
     return (
         <div className={cn(
-            "fixed top-0 w-full flex items-center justify-between h-[64px] border-b border-b-black85 bg-white px-[32px] pl-24 z-50 py-[12px]",
-            !collapsed && "w-[calc(100vw-224px)] ml-[224px]"
+            "fixed top-0 w-[calc(100vw-80px)] ml-20 flex items-center justify-between h-16 border-b border-b-black85 bg-white px-8 z-50 py-3",
+            !collapsed && "w-[calc(100vw-224px)] ml-56"
         )}>
             <Headline />
             <Search />

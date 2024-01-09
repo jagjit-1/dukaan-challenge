@@ -9,9 +9,7 @@ export const Headline = () => {
             <p className="text-base">Payments</p>
             <div className="flex items-center h-full space-x-[6px] w-[94px]">
                 <Tooltip title="explaination">
-
                     <HelpCircle className="w-[14px] h-[14px]" />
-
                 </Tooltip>
                 <p className="text-xs">How it works</p>
             </div>

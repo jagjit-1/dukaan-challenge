@@ -1,4 +1,4 @@
-import DataTable from "../table"
+import BasicTable from "../table"
 
 export const Transactions = () => {
     return (
@@ -7,7 +7,7 @@ export const Transactions = () => {
                 Transactions | This Month
             </div>
             <div className="py-3 px-3 bg-white">
-                <DataTable />
+                <BasicTable />
             </div>
         </div>
     )
