@@ -1,6 +1,8 @@
-import { cn } from "../../../lib/util"
+import { cn } from "../../../lib/util";
+import { useSidebar } from "../../../store/use-sidebar";
 
 export const MenuItem = ({ icon: Icon, label, isActive }) => {
+    const { collapsed } = useSidebar(state => state);
     return (
         <div className=" group transition duration-300">
             <button className={cn(
@@ -8,7 +10,7 @@ export const MenuItem = ({ icon: Icon, label, isActive }) => {
                 !!isActive && "bg-white/10"
             )}>
                 <Icon classname="h-5 w-5" />
-                <p className="font-medium text-sm">{label}</p>
+                <p className={cn("font-medium text-sm", collapsed && "hidden")}>{label}</p>
 
             </button>
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>

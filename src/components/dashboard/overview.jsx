@@ -8,9 +8,9 @@ export const Overview = () => {
                 <h1 className="text-xl font-medium">Overview</h1>
                 <Dropdown classname="rounded h-full w-[137px]" />
             </div>
-            <div className="flex space-x-4 w- h-[118px]">
-                <Card className="flex-1" heading="Online order" value="231" />
-                <Card className="flex-1" heading="Amount received" value="23,92,312.19" />
+            <div className="flex flex-wrap md:space-x-4">
+                <Card className="flex-grow p-5" heading="Online order" value="231" />
+                <Card className="flex-grow p-5" heading="Amount received" value="23,92,312.19" />
             </div>
         </div>
     )
